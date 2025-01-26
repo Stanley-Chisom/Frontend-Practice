@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #070707;
+  overscroll-behavior: none;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2800px;
+  height: 100%;
+}
+
+.slider-inner {
+  position: absolute;
+  top: 15%;
+  height: 70%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.item {
+  position: relative;
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.img:hover {
+  scale: 1.1;
+}
+
+.img {
+  position: absolute;
+  width: 500px;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+}

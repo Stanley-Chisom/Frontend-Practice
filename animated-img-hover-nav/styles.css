@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  background: #161616;
+}
+
+.menu {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  height: 60%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  position: relative;
+  flex: 1;
+  border-bottom: 1px solid #f2f2f228;
+}
+
+.menu span {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #f4f4f4;
+  mix-blend-mode: difference;
+  font-size: 2.5rem;
+}
+
+.one {
+  background-image: url(./img/04.jpeg);
+}
+.two {
+  background-image: url(./img/02.jpeg);
+}
+.three {
+  background-image: url(./img/03.jpeg);
+}
+.four {
+  background-image: url(./img/01.jpeg);
+}
+.five {
+  background-image: url(./img/05.jpeg);
+}
+
+.hover-reveal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 400px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(0, -300px);
+  transition: 0.2s ease-out;
+}
+
+.hover-reveal__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.hover-reveal__img {
+  background-size: cover;
+  background-position: 50%, 50%;
+  transform-origin: 50%, 100%;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  will-change: transform;
+  transform: scale(0.8, 0.8);
+  transition: 1.5s transform;
+}

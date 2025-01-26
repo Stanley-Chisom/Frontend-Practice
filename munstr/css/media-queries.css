@@ -1,0 +1,13 @@
+@media (max-width: 880px) {
+  .about-content p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-wrap: balance;
+  }
+}

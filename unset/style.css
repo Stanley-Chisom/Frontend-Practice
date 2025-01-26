@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8fefe;
+  font-family: "Poppins", serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav button {
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0 2px;
+}
+
+.dark {
+  background: #0a1c1e;
+  color: #f8fefe;
+}
+
+.light {
+  background: none;
+  border: 1px solid #e2e2e2;
+}
+
+section {
+  padding: 1.5rem 2.5rem;
+}
+
+.hero {
+  text-wrap: wrap;
+  text-transform: capitalize;
+  padding: 4cqi;
+}
+
+.hero p {
+  font-size: 1rem;
+}
+
+.hero h1 {
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 5rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.cards img {
+  width: 55px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  gap: 15px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 2rem;
+}
+
+.card > div {
+  margin: 0.5rem 0;
+}
+
+.card p {
+  color: #80868a;
+  font-size: 0.88rem;
+}
+
+.card h4 {
+  margin-bottom: 0.2rem;
+  font-weight: normal;
+}
+
+.about {
+  padding: 10rem 5rem;
+}
+
+.about h2 {
+  text-wrap: balance;
+  line-height: 1.2;
+  font-size: clamp(1.5rem, 4cqi, 8rem);
+  font-weight: 400;
+}
+
+.about h4 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #80868a;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 95%;
+  margin: auto;
+}
+
+.project h3 {
+  font-weight: normal;
+  padding-bottom: 5rem;
+  font-size: clamp(1rem, 1.5cqi, 3rem);
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 0.8rem;
+}
+
+.status > div {
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+}
+
+.status p {
+  font-size: 0.8rem;
+  color: #80868a;
+}
+
+.active {
+  background: #31e083;
+}
+
+.inactive {
+  background: rgb(255, 124, 76);
+}
+
+.project img {
+  max-width: 90%;
+  border-radius: 5px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 100%;
+  padding: 1.8rem 1.1rem;
+  margin-top: 5rem;
+}
+
+.service img {
+  width: 82%;
+  height: 550px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin-top: 2rem;
+  margin-left: 1.2rem;
+}
+
+.service img:hover {
+  scale: 1.02;
+}
+
+.service h2 {
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+.service p {
+  width: 30ch;
+  margin: 1.5rem auto;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.sub-service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 4rem 0 1.2rem 0;
+  padding: 1rem 0.5rem 0.8rem 0.7rem;
+}
+
+.sub-service button {
+  border: 1px solid #d4dce1;
+  font-size: 0.78rem;
+  border-radius: 10px;
+  outline: none;
+  background: none;
+  padding: 8px;
+}

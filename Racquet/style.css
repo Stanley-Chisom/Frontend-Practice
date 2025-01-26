@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --link-text: clamp(0.5rem, 1rem, 3rem);
+}
+
+body {
+  background: #f9f9f9;
+  font-family: Inter;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  background: #070707;
+  color: #f9f9f9;
+}
+
+nav h2 {
+  font-family: "Bowlby One", sans-serif;
+  font-weight: 800;
+  color: #cdf44b;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-weight: 500;
+  font-size: .88rem;
+}
+
+.nav-btn button {
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+  background: #cdf44b;
+  color: #070707;
+  border-radius: 5px;
+  padding: 0.8rem 1.8rem;
+  font-size: 0.89rem;
+  font-weight: 700;
+}
+
+.hero-wrapper {
+  background-image: url("./img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Add the overlay */
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+}
+
+/* Make sure the content stays above the overlay */
+.hero-wrapper h1,
+.hero-wrapper button {
+  position: relative; /* This ensures the text appears above the overlay */
+  z-index: 1;
+}
+
+.hero-wrapper h1 {
+  line-height: 0.99;
+  color: #f9f9f9;
+  font-size: clamp(2rem, 10cqi, 20rem);
+  font-weight: 900;
+}
+
+.hero-wrapper button {
+  border: none;
+  outline: none;
+  background: #070707;
+  color: #cdf44b;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-family: "Bowlby One";
+  border-radius: 5px;
+  padding: 1.2rem 3rem;
+}
+
+.pricing {
+  padding: 1.5rem 2rem;
+}
+
+.pricing-heading {
+  font-size: clamp(2rem, 3cqi, 10rem);
+  margin: 2rem 5vw;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: auto;
+}
+
+.card {
+  width: 80%;
+  height: 50vh;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.card h3 {
+  font-size: 1.2cqi;
+}
+
+.card h2 {
+  font-size: 4.5rem;
+}
+
+.rookie-btn {
+  border: none;
+  outline: none;
+  background: #070707;
+  color: #f0f0f0;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+
+.list {
+  margin-top: 2rem;
+}
+
+.list h4 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 0.85rem;
+}
+
+.list p {
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+.card:nth-child(1) {
+  background: #ebebeb;
+}
+
+.card:nth-child(2) {
+  background: #cdf44b;
+}
+
+.card:nth-child(2) button {
+  border: none;
+  outline: none;
+  background: #070707;
+  color: #cdf44b;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
+
+.card:nth-child(3) {
+  color: #f9f9f9;
+  background: #070707;
+}
+
+.card:nth-child(3) button {
+  border: none;
+  outline: none;
+  background: #cdf44b;
+  color: #070707;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1.2rem;
+}
